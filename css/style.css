@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#content{
+    background-color: aqua;
+}
+.nav-container ul{
+    text-decoration: none;
+    display: flex;
+}
+
+.nav-container ul li{
+    text-decoration: none;
+    padding-right: 10px;
+    /* align-items: center; */
+}
