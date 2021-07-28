@@ -11,14 +11,14 @@
     <div class="navbar">
         <div class="navbar_container">
             <div class="logo-container">
-                ISRAEL
+                ISRAEL is here son
             </div>
-            <div class="nav-container">
+            <!-- <div class="nav-container">
                 <ul>
                     <li>Resume</li>
-                    <li>About</li>                    
+                    <li>About</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
     </div>
 
