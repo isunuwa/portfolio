@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>ISU</title>
+    <title>Israel Sunuwar Portfolio</title>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar_container">
             <div class="logo-container">
-                ISRAEL is here son
+                ISRAEL is here the son
             </div>
             <!-- <div class="nav-container">
                 <ul>
