@@ -1,17 +1,71 @@
-*{
-    margin: 0;
-    padding: 0;
+/* ========================================================================
+   Theme Mixins
+ ========================================================================== */
+@font-face {
+  font-family: "bruno-ace";
+  src: url("../assets/fonts/BrunoAceSC-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
-#content{
-    background-color: aqua;
-}
-.nav-container ul{
-    text-decoration: none;
-    display: flex;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.nav-container ul li{
-    text-decoration: none;
-    padding-right: 10px;
-    /* align-items: center; */
+.is-logo-text {
+  font-family: "bruno-ace";
+  font-size: 55px;
+  background-color: #FBDA61;
+  background-image: linear-gradient(to right, #FBDA61 0%, #FF5ACD 51%, #FBDA61 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
 }
+.is-logo-text:hover {
+  background-position: right;
+  background-size: 200% auto;
+}
+
+.is-logo-container {
+  text-align: center;
+}
+
+.is-overview-details {
+  min-height: 420px;
+}
+
+.is-content .is-overview-right {
+  background: url(../assets/images/banner-back.png) top right no-repeat;
+}
+
+.is-overview {
+  position: relative;
+  min-height: 420px;
+}
+.is-overview.is-overview-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.is-overview.is-overview-div {
+  z-index: 1;
+  color: #E04687;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.is-overview.is-overview-div .is-working-at {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  transition: ease-in-out 0.2s;
+}
+.is-overview.is-overview-div .is-working-at:hover {
+  filter: none;
+  -webkit-filter: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Israel Sunuwar Portfolio</title>
-</head>
-<body>
-    <div class="navbar">
-        <div class="navbar_container">
-            <div class="logo-container">
-                ISRAEL is here the son
+  <head>
+    <?php include("shared/head.php") ?>
+  </head>
+  <body>
+    <?php include("shared/navbar.php") ?>
+
+    <section class="body">
+      <div class="is-content">
+        <div class="container">
+          <div class="row is-overview-details">
+            <div class="col-md-7">
+              <div class="is-overview is-overview-img">
+                <img src="assets/images/small-icon.png" alt="small-icon">
+              </div>
+              <div class="is-overview is-overview-div">
+                <h2>its yo boy,</h2>
+                <h1>Israel Sunuwar  </h1>
+                <span>@ your service</span>
+                <h3>where currently working @ <span class="is-working-at">cloudyfox technology</span> </h3>
+              </div>
             </div>
-            <!-- <div class="nav-container">
-                <ul>
-                    <li>Resume</li>
-                    <li>About</li>
-                </ul>
-            </div> -->
+            <div class="col-md-5 is-overview-right">
+              <!-- <p> nothing to say more that i am a very hansome boiiii. </p> -->
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div id="content">
-        this is content
-    </div>
+    <?php include("shared/footer.php") ?>
 
-    <div class="footer">
-        this is footer
-    </div>
-</body>
-<script src="js/script.js"></script>
+  </body>
 </html>

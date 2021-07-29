@@ -1,0 +1,38 @@
+ // name:          header
+// description:    header for all
+//  ====================================
+// variables
+// =====================================
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.#{$project-namespace}logo-container{
+  // position: absolute;
+}
+// header text
+.#{$project-namespace}logo-text{
+  font-family: "bruno-ace";
+  font-size: 55px;
+  // background-color: #FBAB7E;
+  // background-image: linear-gradient(to right, #FBAB7E 0%, #F7CE68 51%, #FBAB7E 100%);
+  background-color: #FBDA61;
+  background-image: linear-gradient(to right, #FBDA61 0%, #FF5ACD 51%,  #FBDA61 100%,);
+  background-size: 200% auto;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+
+  &:hover{
+    background-position: right;
+    background-size: 200% auto;
+  }
+}
+
+.#{$project-namespace}logo-container{
+  text-align: center;
+}

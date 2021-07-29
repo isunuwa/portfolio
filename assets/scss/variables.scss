@@ -1,0 +1,62 @@
+// ===============================
+// variables
+// ===============================
+
+// project namespace
+$project-namespace: "is-";
+
+// primary colors
+$color-is-first: #f9ab55; // burnt orange
+$color-is-second: #fe621d; // orange red
+$color-is-third: #E04687; // tello pink
+
+// seconday colors
+$color-se-first: #fcdebe; // peach full
+$color-se-second: #c59fc9; // lilac
+$color-se-first: #97f9f9; // electric blue
+
+// supportive grays
+$color-gray-1: #f2f2f2;
+$color-gray-2: #e5e5e5;
+$color-gray-3: #cccccc;
+$color-gray-4: #999999;
+$color-gray-5: #808080;
+$color-gray-6: #666666;
+
+// utility colors
+$color-utility-info-link: #0076a8;
+$color-utility-warning: #ffaa00;
+$color-utility-alert :#d23241;
+$color-utility-success: #64a539;
+$color-utility-text: #333333;
+
+$color-primary-hover: #fe791b;
+
+// base
+$base-body-font-family: Helvetica, Arial, sans-serif;
+
+// buttons
+$button-primary-background: $color-is-second;
+$button-primary-hover-background: darken($color-is-second, 10%);
+$button-inverse-background: $color-is-first;
+$button-inverse-color: #fff;
+$button-inverse-hover-background: lighten($color-is-first, 10%);
+$button-inverse-hover-color: #fff;
+
+// link colors
+$base-link-color: #0076A8;
+$base-link-text-decoration: none !default;
+$base-link-hover-color: $color-is-first;
+$base-link-hover-text-decoration: underline !default;
+
+// colors
+$white: #ffffff;
+$black: #000000;
+$grey: #666666;
+$black-shade1: #2e2e2e;
+
+// font weights
+$normal: 400;
+$medium: 500;
+$semi-bold:600;
+$bold: 700;
