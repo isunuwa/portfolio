@@ -53,12 +53,17 @@
 }
 .is-overview.is-overview-div {
   z-index: 1;
-  color: #E04687;
+  color: #f9ab55;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.is-overview.is-overview-div h1 {
+  text-transform: uppercase;
+}
 .is-overview.is-overview-div .is-working-at {
+  color: #f9ab55;
+  text-decoration: none;
   filter: blur(5px);
   -webkit-filter: blur(5px);
   transition: ease-in-out 0.2s;
