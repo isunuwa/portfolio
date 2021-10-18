@@ -1,64 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <?php include("shared/head.php") ?> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- favicon -->
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Israel Sunuwar Portfolio</title>
-    <meta name="description" content="just another frontend developer on the surface." />
+    <!-- favicon -->
+    <link rel="icon" href="./assets/favicon/favicon-16x16.png" type="image/png">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom style -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- fontawesom icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font (roboto slab) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,200;0,400;0,500;0,600;1,200&display=swap" rel="stylesheet">
 
   </head>
-  <body>
-    <!-- <?php include("shared/navbar.php") ?> -->
-    <div class="is-logo-container">
-      <div class="navbar">
-        <div class="navbar-profile mx-auto">
-          <h1 class="is-logo-text">israel sunuwar</h1>
-        </div>
-      </div>
-    </div>
 
-    <section class="body">
-      <div class="is-content">
-        <div class="container">
-          <div class="row is-overview-details">
-            <div class="col-md-7">
-              <div class="is-overview is-overview-img">
-                <img src="assets/images/small-icon.png" alt="small-icon">
-              </div>
-              <div class="is-overview is-overview-div">
-                <h2>its yo boy,</h2>
-                <h1>Israel Sunuwar  </h1>
-                <span>@ your service</span>
-                <h3>working @ <a class="is-working-at" href="https://www.cloudyfox.io" target="_blank">cloudyfox technology</a> </h3>
+  <body class="">
+    <!-- header section -->
+    <header class="header-wrapper">
+      <nav class="rz-nav-menu">
+        <div class="container-fluid">
+          <div class="rz-navbar">
+            <!-- navbar content -->
+            <div class="rz-navbar-content rz-nav-wrapper">
+              <ul class="nav navbar-nav nav-menu rz-content rz-content-links">
+                <li class="nav-item active"><a href="">home</a></li>
+                <li class="nav-item"><a href="#work">work</a></li>
+                <li class="nav-item"><a href="#contact">contact</a></li>
+                <li class="nav-item">
+                  <i class="moon-icon fa fa-moon-o" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+            <!-- navbar image -->
+            <a href="/" title="Israel Sunuwar" class="rz-navbar-content">
+              <img src="./assets/images/logo.png" alt="logo" class="rz-logo">
+            </a>
+            <!-- social navbar -->
+            <div class="rz-navbar-content">
+              <ul class="nav social-nav rz-content rz-content-social">
+                <li><a href="https://www.instagram.com/isunuwa/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/israel-sunuwar/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/isunuwa/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- mobile navbar -->
+      <nav class="responsive-nav">
+        <div class="container-fluid">
+          <div class="rz-res-navbar">
+            <!-- burger menu -->
+            <div class="rz-nav-header-wrapper">
+              <a href="/" title="Israel Sunuwar" class="rz-navbar-content">
+                <img src="./assets/images/logo.png" alt="logo" class="mbl-rz-logo">
+              </a>
+              <div class="burger-outer-div">
+                <div class="burger-wrapper">
+                  <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line3"></div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-md-5 is-overview-right">
-              <!-- <p> nothing to say more that i am a very hansome boiiii. </p> -->
+            <!-- navbar content -->
+            <div class="rz-navbar-wrapper">
+              <div class="rz-res-navbar-content rz-nav-wrapper">
+                <ul class="nav navbar-nav nav-menu rz-content rz-content-links">
+                  <li class="nav-item">
+                    <i class="mbl-moon fa fa-moon-o" aria-hidden="true"></i>
+                  </li>
+                  <li class="nav-item"><a href="">home</a></li>
+                  <li class="nav-item"><a href="#work">work</a></li>
+                  <li class="nav-item"><a href="#contact">contact</a></li>
+                </ul>
+              </div>
+              <div class="">
+              </div>
+              <!-- social navbar -->
+              <div class="rz-res-navbar-content">
+                <ul class="nav social-nav rz-content rz-content-social">
+                  <li><a href="https://www.instagram.com/isunuwa/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/israel-sunuwar/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                  <li><a href="https://github.com/isunuwa/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section for hero intro -->
+    <section class="hero-intro-section">
+      <div class="rz-intro-wrapper">
+        <div class="rz-intro-div">
+          <div class="rz-intro-greet">
+            <h1>
+              I'm <span class="rz-active" data-text="Rejoy">Israel</span>, welcome to my portfolio. Currently WIP.
+            </h1>
+          </div>
+          <div class="rz-intro-description">
+            <p>Developer at <span class="is-work-at">Inctic Labs</span> • Nepal • Kathmandu</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- section for hero skill -->
+    <section class="hero-skill-section">
+      <div class="rz-skill-wrapper">
+        <rz class="skill-div">
+          <div class="rz-skill-desc">
+            <h2 class="hero-heading">My Skills</h2>
+            <p>I am currently on my last year on BSC.IT in Leeds Beckket University. Throughout my study and work experience, I've gained a solid understanding of computer science and web development concepts, and have dedicated my time to apply these concepts to real-world scenarios and applications.</p>
+          </div>
+          <div class="rz-skill-list">
+            <ul class="skill-set">
+              <li>Figma</li>
+              <li>Illustrator</li>
+              <li>JavaScript (JS)</li>
+              <li>ES5 &amp; ES6</li>
+              <li>React</li>
+              <li>PHP (Laravel)</li>
+              <li>MySql</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </rz>
+      </div>
+    </section>
+
+    <!-- section for work -->
+    <section class="hero-work-section" id="work">
+      <div class="rz-work-wrapper">
+        <div class="work-div">
+          <div class="rz-work-desc">
+            <h2 class="hero-heading">Work</h2>
+            <p>
+              With every step in life there is different possibility so, a man should make a impact in this world. I like to stay busy and always develop my skill in any field i am intrested in. Take a look at some of the applications, companies I've dedicated my time and work to.
+            </p>
+          </div>
+          <div class="rz-projects">
+            <div class="row project-timeline">
+              <div class="col-md-6 rz-proj-col">
+                <div class="rz-proj-tile">
+                  <div class="proj-banner">
+                    <img src="./assets/images/project-banner.png" alt="banner img">
+                  </div>
+                  <div class="proj-desc">
+                    <h3 class="proj-heading">Project Name</h3>
+                    <p class="proj-desc">
+                      this is to describe the work of the project in time and work related but not too much.
+                    </p>
+                    <a href="#">view project</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 rz-proj-col">
+                <div class="rz-proj-tile">
+                  <div class="proj-banner">
+                    <a href="#">
+                      <img src="./assets/images/project-banner.png" alt="banner img">
+                    </a>
+                  </div>
+                  <div class="proj-desc">
+                    <h3 class="proj-heading">Project Name</h3>
+                    <p class="proj-overview">
+                      this is to describe the work of the project in time and work related but not too much.
+                    </p>
+                    <a href="#">view project</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- <?php include("shared/footer.php") ?> -->
-    <div class="footer">
-      <div class="container">
-        this is footer
+    <!-- section for connect -->
+    <section class="hero-connect-section">
+      <div class="rz-connect-wrapper">
+        <div class="connect-div" id="contact">
+          <div class="rz-connect-desc">
+            <h2 class="hero-heading">Connect with me</h2>
+            <p>We could be a match made to a company grow stronger. If you have any questions, or just want to connect feel free to reach me.</p>
+            <a href="mailto:israelsunuwar@gmail.com" target="_blank" rel="noopener noreferrer" class="rz-highlight">israelsunuwar@gmail.com</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+    </section>
 
+    <!-- section for footer -->
+    <footer class="hero-footer-section">
+      <div class="rz-footer-wrapper">
+        <span>designed by <span class="rz-highlight">isunuwa</span></span>
+      </div>
+    </footer>
 
+    <!-- bootstrap and jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/app.js" defer></script>
   </body>
 </html>
