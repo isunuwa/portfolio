@@ -1,7 +1,7 @@
 'use strict';
 
 let  icon = document.querySelector(".fa-moon-o");
-let  logo = document.querySelector(".rz-logo");
+let  logo = document.querySelector(".is-logo");
 
 icon.addEventListener('click', function(){
   document.body.classList.toggle("dark-theme");
@@ -17,7 +17,7 @@ icon.addEventListener('click', function(){
 
 // for mbl mblIcon
 let  mblIcon = document.querySelector(".mbl-moon");
-let  mblLogo = document.querySelector(".mbl-rz-logo");
+let  mblLogo = document.querySelector(".mbl-is-logo");
 
 mblIcon.addEventListener('click', function(){
   document.body.classList.toggle("dark-theme");
@@ -33,8 +33,8 @@ mblIcon.addEventListener('click', function(){
 
 // responsive navigation
 let burger = document.querySelector('.burger');
-let nav = document.querySelector('.rz-navbar-wrapper');
-let navLinks = document.querySelectorAll('.rz-navbar-wrapper ul li');
+let nav = document.querySelector('.is-navbar-wrapper');
+let navLinks = document.querySelectorAll('.is-navbar-wrapper ul li');
 
 const toggleNav = function() {
   nav.classList.toggle('active');

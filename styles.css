@@ -43,11 +43,11 @@ body{
   margin: 0 auto;
 }
 
-.rz-active {
+.is-active {
   color: var(--primary-black-text);
 }
 
-.rz-highlight {
+.is-highlight {
   color: var(--primary-highlight-color);
 }
 
@@ -64,29 +64,29 @@ body{
 
 /* ============================================ start of hero header section ============================================ */
 
-.rz-logo {
+.is-logo {
   /* width: 34px; */
   height: 50px;
 }
 
-.rz-navbar {
+.is-navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
 }
 
-.rz-navbar .rz-navbar-content .rz-content {
+.is-navbar .is-navbar-content .is-content {
   display: flex;
   flex-direction: row;
   font-family: var(--font-roboto-slab);
 }
 
-.rz-navbar .rz-navbar-content .rz-content li {
+.is-navbar .is-navbar-content .is-content li {
   padding: 12px 16px;
 }
 
-.rz-navbar .rz-navbar-content .rz-content-links li a {
+.is-navbar .is-navbar-content .is-content-links li a {
   text-decoration: none;
   transition: var(--transition);
   color: var(--secondary-grey-text);
@@ -94,15 +94,15 @@ body{
   text-transform: capitalize;
 }
 
-.rz-navbar .rz-navbar-content .rz-content-links li a:hover, .rz-navbar .rz-navbar-content .rz-content-social li a:hover {
+.is-navbar .is-navbar-content .is-content-links li a:hover, .is-navbar .is-navbar-content .is-content-social li a:hover {
   color: var(--primary-black-text);
 }
 
-.rz-navbar .rz-navbar-content .rz-content-social li:hover {
+.is-navbar .is-navbar-content .is-content-social li:hover {
   cursor: pointer;
 }
 
-.rz-navbar .rz-navbar-content .rz-content-social li a {
+.is-navbar .is-navbar-content .is-content-social li a {
   text-decoration: none;
   transition: var(--transition);
   color: var(--secondary-grey-text);
@@ -115,26 +115,26 @@ body{
 .responsive-nav{
   display: none;
 }
-.responsive-nav .rz-res-navbar .burger-outer-div{
+.responsive-nav .is-res-navbar .burger-outer-div{
   cursor: pointer;
   z-index: 10;
   height: 50px;
 }
 
-.responsive-nav .rz-res-navbar .burger-outer-div{
+.responsive-nav .is-res-navbar .burger-outer-div{
   display: block;
 }
-.responsive-nav .rz-res-navbar .burger-outer-div .burger-wrapper{
+.responsive-nav .is-res-navbar .burger-outer-div .burger-wrapper{
   height: 50px;
   display: flex;
   align-items: center;
   float: right;
   /* margin-right: 10px; */
 }
-.responsive-nav .rz-res-navbar{
+.responsive-nav .is-res-navbar{
   position: relative;
 }
-.responsive-nav .rz-res-navbar .burger-outer-div .burger div{
+.responsive-nav .is-res-navbar .burger-outer-div .burger div{
   width: 25px;
   height: 3px;
   margin: 10px;
@@ -142,26 +142,26 @@ body{
   transition: var(--transition);
 }
 @media only screen and (max-width: 768px ) {
-  .rz-nav-menu{
+  .is-nav-menu{
     display: none;
     pointer-events: none;
   }
-  .rz-nav-header-wrapper{
+  .is-nav-header-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .rz-nav-header-wrapper .mbl-rz-logo{
+  .is-nav-header-wrapper .mbl-is-logo{
     max-height: 32px;
   }
   .responsive-nav{
     display: block;
   }
-  .responsive-nav .rz-nav-wrapper{
+  .responsive-nav .is-nav-wrapper{
     margin: 40px 0;
   }
 
-  .responsive-nav .rz-navbar-wrapper{
+  .responsive-nav .is-navbar-wrapper{
     /* position: absolute; */
     background: var(--background-color);
     /* background: pink; */
@@ -175,37 +175,37 @@ body{
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
   }
-  .responsive-nav .rz-navbar-wrapper .rz-content-links li a, .responsive-nav .rz-navbar-wrapper .rz-content-social li a{
+  .responsive-nav .is-navbar-wrapper .is-content-links li a, .responsive-nav .is-navbar-wrapper .is-content-social li a{
     color: var(--secondary-grey-text);
   }
-  .responsive-nav .rz-navbar-wrapper .rz-nav-wrapper ul li{
+  .responsive-nav .is-navbar-wrapper .is-nav-wrapper ul li{
     padding: 18px 0;
     text-transform: uppercase;
   }
 
-  .responsive-nav .rz-navbar-wrapper .rz-nav-wrapper{
+  .responsive-nav .is-navbar-wrapper .is-nav-wrapper{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 20px;
   }
 
-  .responsive-nav .rz-navbar-wrapper.active{
+  .responsive-nav .is-navbar-wrapper.active{
     /* transform: translateX(0); */
     opacity: 1;
     visibility: visible;
     transition: visibility 0s, opacity 0.3s linear;
   }
-  .rz-content-social{
+  .is-content-social{
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .rz-content-social li{
+  .is-content-social li{
     padding: 20px;
 
   }
-  .rz-content-social li a{
+  .is-content-social li a{
     font-size: 24px;
   }
 }
@@ -225,17 +225,17 @@ body{
 
 /* ============================================ start of hero intro section ============================================ */
 
-.hero-intro-section .rz-intro-wrapper {
+.hero-intro-section .is-intro-wrapper {
   padding: 180px 0;
   margin: 0 15px;
 }
 
-.hero-intro-section .rz-intro-div {
+.hero-intro-section .is-intro-div {
   max-width: 800px;
   margin: 0 auto;
 }
 
-.hero-intro-section .rz-intro-div .rz-intro-greet h1 {
+.hero-intro-section .is-intro-div .is-intro-greet h1 {
   color: var(--primary-grey-text);
   font-family: var(--font-tcyz);
   /* min, val, max */
@@ -248,7 +248,7 @@ body{
   text-transform: none;
 }
 
-.hero-intro-section .rz-intro-div .rz-intro-description p {
+.hero-intro-section .is-intro-div .is-intro-description p {
   color: var(--secondary-grey-text);
   font-family: var(--font-tcyz);
   font-size: 16px;
@@ -264,30 +264,30 @@ body{
 
 /* ============================================ start of skill section ============================================ */
 
-.hero-skill-section .rz-skill-wrapper {
+.hero-skill-section .is-skill-wrapper {
   padding: 60px 0;
   margin: 0 15px;
 }
 
-.rz-skill-wrapper .skill-div .rz-skill-desc {
+.is-skill-wrapper .skill-div .is-skill-desc {
   max-width: 800px;
   position: relative;
 }
 
-.rz-skill-wrapper .skill-div .rz-skill-desc p {
+.is-skill-wrapper .skill-div .is-skill-desc p {
   position: relative;
   margin: 40px 0;
   color: var(--secondary-grey-text);
   font-size: 16px;
 }
 
-.rz-skill-wrapper .rz-skill-list .skill-set {
+.is-skill-wrapper .is-skill-list .skill-set {
   list-style: outside none none;
   display: grid;
   grid-template-columns: repeat(4, minmax(80px, 100vw));
 }
 
-.rz-skill-wrapper .rz-skill-list .skill-set li {
+.is-skill-wrapper .is-skill-list .skill-set li {
   position: relative;
   margin: 10px 0;
   padding-left: 20px;
@@ -298,7 +298,7 @@ body{
   color: var(--primary-black-text);
 }
 
-.rz-skill-wrapper .rz-skill-list .skill-set li::before {
+.is-skill-wrapper .is-skill-list .skill-set li::before {
   content: "▹";
   position: absolute;
   left: 0px;
@@ -308,13 +308,13 @@ body{
   line-height: 12px;
 }
 
-.rz-skill-wrapper .rz-skill-list .skill-set li:hover {
+.is-skill-wrapper .is-skill-list .skill-set li:hover {
   transform: translateY(-3px);
 }
 
 /* ============================================ end of skill section ============================================ */
 
-.rz-skill-wrapper .skill-div .rz-skill-desc h2, .hero-work-section .rz-work-desc h2, .hero-connect-section .rz-connect-desc h2 {
+.is-skill-wrapper .skill-div .is-skill-desc h2, .hero-work-section .is-work-desc h2, .hero-connect-section .is-connect-desc h2 {
   margin: 26px 0;
   display: flex;
   position: relative;
@@ -330,49 +330,49 @@ body{
 
 /* ============================================ start of work section ============================================ */
 
-.hero-work-section .rz-work-wrapper {
+.hero-work-section .is-work-wrapper {
   padding: 60px 0;
   margin: 15px;
 }
 
-.hero-work-section .work-div .rz-work-desc {
+.hero-work-section .work-div .is-work-desc {
   max-width: 800px;
 }
 
-.hero-work-section .work-div .rz-work-desc p {
+.hero-work-section .work-div .is-work-desc p {
   color: var(--secondary-grey-text);
   margin-bottom: 30px;
 }
 
-.hero-work-section .work-div .rz-projects .proj-banner img {
+.hero-work-section .work-div .is-projects .proj-banner img {
   /* max-width: 260px; */
   width: 100%;
   transition: var(--transition);
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile:hover .proj-banner img {
+.hero-work-section .work-div .is-projects .is-proj-tile:hover .proj-banner img {
   transform: scale(1.03);
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-col {
+.hero-work-section .work-div .is-projects .is-proj-col {
   margin-bottom: 40px;
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile {
+.hero-work-section .work-div .is-projects .is-proj-tile {
   padding: 30px 20px;
   transition: var(--transition);
   cursor: pointer;
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile:hover {
+.hero-work-section .work-div .is-projects .is-proj-tile:hover {
   box-shadow: var(--hover-effect);
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile .proj-desc {
+.hero-work-section .work-div .is-projects .is-proj-tile .proj-desc {
   padding: 0 15px;
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile .proj-desc h3 {
+.hero-work-section .work-div .is-projects .is-proj-tile .proj-desc h3 {
   margin-top: 30px;
   color: var(--primary-black-text);
   font-size: clamp(1rem, 10vh, 2rem);
@@ -380,13 +380,13 @@ body{
   font-family: var(--font-tcyz);
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile .proj-desc p {
+.hero-work-section .work-div .is-projects .is-proj-tile .proj-desc p {
   color: var(--secondary-grey-text);
   font-size: 16px;
   padding: 12px 0;
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile .proj-desc a {
+.hero-work-section .work-div .is-projects .is-proj-tile .proj-desc a {
   color: var(--primary-black-text);
   font-size: 16px;
   transition: var(--transition);
@@ -395,7 +395,7 @@ body{
   font-weight: 600;
 }
 
-.hero-work-section .work-div .rz-projects .rz-proj-tile:hover .proj-desc a {
+.hero-work-section .work-div .is-projects .is-proj-tile:hover .proj-desc a {
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }
@@ -404,21 +404,21 @@ body{
 
 /* ============================================ start of connection section ============================================ */
 
-.hero-connect-section .rz-connect-wrapper {
+.hero-connect-section .is-connect-wrapper {
   padding: 60px 0;
   margin: 15px;
 }
 
-.hero-connect-section .connect-div .rz-connect-desc {
+.hero-connect-section .connect-div .is-connect-desc {
   max-width: 800px;
 }
 
-.hero-connect-section .connect-div .rz-connect-desc p {
+.hero-connect-section .connect-div .is-connect-desc p {
   font-size: 16px;
   color: var(--secondary-grey-text);
 }
 
-.hero-connect-section .connect-div .rz-connect-desc a {
+.hero-connect-section .connect-div .is-connect-desc a {
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 600;
@@ -428,7 +428,7 @@ body{
   transition: text-underline-offset 500ms, var(--transition);
 }
 
-.hero-connect-section .connect-div .rz-connect-desc a:hover {
+.hero-connect-section .connect-div .is-connect-desc a:hover {
   text-decoration: none;
   color: var(--primary-highlight-color);
 }
@@ -437,7 +437,7 @@ body{
 
 /* ============================================ start of footer section ============================================ */
 
-.hero-footer-section .rz-footer-wrapper {
+.hero-footer-section .is-footer-wrapper {
   padding: 60px 0;
   display: flex;
   justify-content: center;
