@@ -259,7 +259,17 @@ body{
   text-align: left;
   text-transform: none;
 }
-
+.hero-intro-section .is-intro-div .is-intro-description .is-work-at {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  color: var(--primary-highlight-color);
+  transition: var(--transition);
+}
+.hero-intro-section .is-intro-div .is-intro-description .is-work-at:hover {
+  filter: blur(0);
+}
 /* ============================================ end of intro section ============================================ */
 
 /* ============================================ start of skill section ============================================ */
