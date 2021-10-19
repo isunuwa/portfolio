@@ -5,23 +5,19 @@ let  logo = document.querySelector(".is-logo");
 let darkMode = localStorage.getItem('darkMode');
 
 // check for emabling dark darkMode
-const enableDarkMode = (iconSet) => {
+const enableDarkMode = () => {
   document.body.classList.add("dark-theme");
   // toggle image and icon
-  console.log(iconSet);
-  icon.src = "./assets/images/logo-light.png";
+  logo.src = "./assets/images/logo-light.png";
   icon.className = 'fa fa-circle';
   localStorage.setItem('darkMode', "enabled");
 }
 
-const disableDarkMode = (iconSet) => {
+const disableDarkMode = () => {
   // toggle image and icon
   document.body.classList.remove("dark-theme");
-  console.log(iconSet);
-
   logo.src = "./assets/images/logo.png";
   icon.className = 'fa fa-moon';
-
   localStorage.setItem('darkMode', null);
 }
 
@@ -29,37 +25,48 @@ const disableDarkMode = (iconSet) => {
 icon.addEventListener('click', function(){
   // updating before checking darkMode
   darkMode = localStorage.getItem('darkMode');
-  let iconSet = "icon";
-
   if (darkMode !== "enabled") {
-    enableDarkMode(iconSet);
+    enableDarkMode();
   }
   else {
-    // let iconSet = "icon";
-    disableDarkMode(iconSet);
+    disableDarkMode();
   }
 });
 
 // checking if the theme browser is switched or not
 if (darkMode === 'enabled') {
-  let iconSet = "icon";
-
-  enableDarkMode(iconSet);
+  enableDarkMode();
 }
 
 // for mbl mblIcon
 let  mblIcon = document.querySelector(".mbl-moon");
 let  mblLogo = document.querySelector(".mbl-is-logo");
 
+const enableMblDarkMode = () => {
+  document.body.classList.add("dark-theme");
+  // toggle image and icon
+  mblLogo.src = "./assets/images/logo-light.png";
+  mblIcon.className = 'fa fa-circle';
+  localStorage.setItem('darkMode', "enabled");
+}
+
+const disableMblDarkMode = () => {
+  // toggle image and icon
+  document.body.classList.remove("dark-theme");
+  mblLogo.src = "./assets/images/logo.png";
+  mblIcon.className = 'fa fa-moon';
+  localStorage.setItem('darkMode', null);
+}
+
 // calling when the icon is clicked on responsive format
 mblIcon.addEventListener('click', function(){
   // updating before checking darkMode
   darkMode = localStorage.getItem('darkMode');
   if (darkMode !== "enabled") {
-    enableDarkMode();
+    enableMblDarkMode();
   }
   else {
-    disableDarkMode();
+    disableMblDarkMode();
   }
 });
 
