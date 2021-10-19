@@ -1,33 +1,65 @@
 'use strict';
 
-let  icon = document.querySelector(".fa-moon-o");
+let  icon = document.querySelector(".fa-moon");
 let  logo = document.querySelector(".is-logo");
+let darkMode = localStorage.getItem('darkMode');
 
+// check for emabling dark darkMode
+const enableDarkMode = (iconSet) => {
+  document.body.classList.add("dark-theme");
+  // toggle image and icon
+  console.log(iconSet);
+  icon.src = "./assets/images/logo-light.png";
+  icon.className = 'fa fa-circle';
+  localStorage.setItem('darkMode', "enabled");
+}
+
+const disableDarkMode = (iconSet) => {
+  // toggle image and icon
+  document.body.classList.remove("dark-theme");
+  console.log(iconSet);
+
+  logo.src = "./assets/images/logo.png";
+  icon.className = 'fa fa-moon';
+
+  localStorage.setItem('darkMode', null);
+}
+
+// calling when the icon is clicked on web format
 icon.addEventListener('click', function(){
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    logo.src = "./assets/images/logo-light.png";
-    icon.className = 'fa fa-circle';
+  // updating before checking darkMode
+  darkMode = localStorage.getItem('darkMode');
+  let iconSet = "icon";
+
+  if (darkMode !== "enabled") {
+    enableDarkMode(iconSet);
   }
-  else{
-    logo.src = "./assets/images/logo.png";
-    icon.className = 'fa fa-moon-o';
+  else {
+    // let iconSet = "icon";
+    disableDarkMode(iconSet);
   }
 });
+
+// checking if the theme browser is switched or not
+if (darkMode === 'enabled') {
+  let iconSet = "icon";
+
+  enableDarkMode(iconSet);
+}
 
 // for mbl mblIcon
 let  mblIcon = document.querySelector(".mbl-moon");
 let  mblLogo = document.querySelector(".mbl-is-logo");
 
+// calling when the icon is clicked on responsive format
 mblIcon.addEventListener('click', function(){
-  document.body.classList.toggle("dark-theme");
-  if (document.body.classList.contains("dark-theme")) {
-    mblLogo.src = "./assets/images/logo-light.png";
-    mblIcon.className = 'fa fa-circle';
+  // updating before checking darkMode
+  darkMode = localStorage.getItem('darkMode');
+  if (darkMode !== "enabled") {
+    enableDarkMode();
   }
-  else{
-    mblLogo.src = "./assets/images/logo.png";
-    mblIcon.className = 'fa fa-moon-o';
+  else {
+    disableDarkMode();
   }
 });
 

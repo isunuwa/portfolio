@@ -114,6 +114,7 @@ body{
 /* responsive navbar query */
 .responsive-nav{
   display: none;
+  transition: var(--transition);
 }
 .responsive-nav .is-res-navbar .burger-outer-div{
   cursor: pointer;
@@ -156,6 +157,8 @@ body{
   }
   .responsive-nav{
     display: block;
+    transition: var(--transition);
+
   }
   .responsive-nav .is-nav-wrapper{
     margin: 40px 0;
@@ -173,7 +176,9 @@ body{
     /* transform: translateX(-110%); */
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    /* transition: visibility 0s, opacity 0.5s linear; */
+    transition: var(--transition);
+
   }
   .responsive-nav .is-navbar-wrapper .is-content-links li a, .responsive-nav .is-navbar-wrapper .is-content-social li a{
     color: var(--secondary-grey-text);
