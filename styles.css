@@ -111,7 +111,7 @@ body{
 }
 
 
-/* responsive navbar query */
+/* =============================== responsive navbar query =============================== */
 .responsive-nav{
   display: none;
   transition: var(--transition);
@@ -141,6 +141,9 @@ body{
   margin: 10px;
   background-color: var(--primary-black-text);
   transition: var(--transition);
+}
+.is-res-navbar .is-res-navbar-content .is-content-social {
+  grid-template-columns: repeat(2, minmax(80px, 80px));
 }
 @media only screen and (max-width: 768px ) {
   .is-nav-menu{
@@ -202,13 +205,13 @@ body{
     transition: visibility 0s, opacity 0.3s linear;
   }
   .is-content-social{
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
   }
   .is-content-social li{
     padding: 20px;
-
+    text-align: center;
   }
   .is-content-social li a{
     font-size: 24px;
@@ -225,6 +228,7 @@ body{
 }
 .fixed-position {
    position: fixed;
+   width: 100%;
 }
 /* ============================================ end of navbar header section ============================================ */
 
@@ -327,6 +331,11 @@ body{
   transform: translateY(-3px);
 }
 
+@media only screen and (max-width: 414px) {
+  .is-skill-wrapper .is-skill-list .skill-set {
+    grid-template-columns: repeat(3, minmax(80px, 100vw));
+  }
+}
 /* ============================================ end of skill section ============================================ */
 
 .is-skill-wrapper .skill-div .is-skill-desc h2, .hero-work-section .is-work-desc h2, .hero-connect-section .is-connect-desc h2 {
