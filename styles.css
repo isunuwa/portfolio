@@ -143,7 +143,7 @@ body{
   transition: var(--transition);
 }
 .is-res-navbar .is-res-navbar-content .is-content-social {
-  grid-template-columns: repeat(2, minmax(80px, 80px));
+  grid-template-columns: repeat(3, minmax(80px, 80px));
 }
 @media only screen and (max-width: 768px ) {
   .is-nav-menu{
@@ -210,7 +210,7 @@ body{
     justify-content: center;
   }
   .is-content-social li{
-    padding: 20px;
+    padding: 14px;
     text-align: center;
   }
   .is-content-social li a{
