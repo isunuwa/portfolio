@@ -5,7 +5,7 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      website is currently on build
+      <h1>website is currently on build</h1>
     </div> 
   );
 }
