@@ -1,10 +1,12 @@
-import './App.css';
+import './assets/css/App.css';
+import './assets/css/index.css';
+import React from 'react';
 
 function App() {
   return (
     <div className="App">
-      Site is under construction
-    </div>
+      website is currently on build
+    </div> 
   );
 }
 
