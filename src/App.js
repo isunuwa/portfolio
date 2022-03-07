@@ -1,11 +1,25 @@
+// assets
 import './assets/css/App.css';
-import './assets/css/index.css';
+import './assets/css/styles.css';
+// js
+import './assets/js/app';
+
+// components
+import Header from './components/Header';
+import Intro from './components/Intro';
+import Skill from './components/Skill';
+import Work from './components/Work';
+import Connect from './components/Connect';
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <h1>website is currently on build</h1>
+      <Header />
+      <Intro />
+      <Skill />
+      <Work />
+      <Connect />
     </div> 
   );
 }
