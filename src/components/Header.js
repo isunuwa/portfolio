@@ -1,7 +1,35 @@
 import logo from '../assets/images/logo.png'
+import {toggleNav} from '../assets/js/app';
 import React from 'react'
 
 const Header = () => {
+  // responsive navigation
+  let burger = document.querySelector('.burger');
+  let nav = document.querySelector('.is-navbar-wrapper');
+  let navLinks = document.querySelectorAll('.is-navbar-wrapper ul li');
+
+  const toggleNav = function() {
+    nav.classList.toggle('active');
+    document.body.classList.toggle("fixed-position");
+    // burger animation
+    burger.classList.toggle('active');
+  }
+
+  const navSlide = () => {
+    burger.addEventListener('click', toggleNav);
+  }
+
+  const navClick = () => {
+    navLinks.forEach((navLink) => {
+      navLink.addEventListener('click', toggleNav);
+    });
+  }
+
+  function callToggle(){
+    navClick();
+    navSlide(); 
+  }
+  
   return (
     <header className="header-wrapper">
       <nav className="is-nav-menu">
@@ -46,7 +74,7 @@ const Header = () => {
               </a>
               <div className="burger-outer-div">
                 <div className="burger-wrapper">
-                  <div className="burger">
+                  <div className="burger" onClick={callToggle}>
                     <div className="line1"></div>
                     <div className="line3"></div>
                   </div>
