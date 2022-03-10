@@ -3,7 +3,7 @@ import './assets/css/App.css';
 import './assets/css/styles.css';
 
 // js
-import './assets/js/app';
+// import './assets/js/app';
 
 // components
 import Header from './components/Header';
