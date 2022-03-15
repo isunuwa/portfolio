@@ -1,7 +1,5 @@
 // assets
-import './assets/css/App.css';
-import './assets/css/styles.css';
-
+import './assets/css/App.scss';
 // js
 // import './assets/js/app';
 
