@@ -5,8 +5,25 @@
   scroll-behavior: smooth;
 }
 body{
-  // font-family: 'Space Mono', monospace;
-  font-family: 'Montserrat', monospace;
+  // font-family: 'Montserrat', monospace;
+  font-family: 'Typewriter mono', 'Montserrat', monospace;
+}
+
+@font-face {
+  font-family: "Typewriter";
+  src: url("../fonts/default-type.otf");
+  src: url("../fonts/default-type.otf") format("embedded-opentype"),
+    url("../fonts/default-type.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "Typewriter mono";
+  src: url("../fonts/default-type-mono.ttf");
+
+  font-weight: 400;
+  font-style: normal
 }
 
 // setting variables
@@ -15,7 +32,7 @@ $white: #ffffff;
 $black: #000000;
 $font-primary-color: #1fe9be;
 // background: linear-gradient(45deg, #000000, #0e4232, #c3ffe7, #ffffff);
-$primaryBack-linear-gradient: linear-gradient(45deg, #000000, #49ffd8);
+$primaryBack-linear-gradient: linear-gradient(45deg, #49ffd8, #fb4195);
 
 // breakpoint 
 $breakpoint-sm-width: 576px ;
@@ -29,8 +46,8 @@ $transition-3s-ease: transition 3s ease;
 $transitionAll-3s-ease: all 0.3s ease-in-out;
 
 // button
-$btn-border: #1fe9be;
-$btn-border-hover: #6fbdbd;
+$btn-border: #49ffd8;
+$btn-border-hover: #49ffd8;
 .button{
   border-radius: 45px;
   border: 3px solid $btn-border;
@@ -45,9 +62,7 @@ $btn-border-hover: #6fbdbd;
 }
 
 // app component
-.appComponent{
 
-}
 
 .linear-back{
   width: 100%;
@@ -104,6 +119,7 @@ $btn-border-hover: #6fbdbd;
         color: #ffffff;
         text-decoration: none;
         transition: $transitionAll-3s-ease;
+        display: inline-block;
       }
       
       // when hovered over the intro main div and its child elements
@@ -115,6 +131,20 @@ $btn-border-hover: #6fbdbd;
     }
   }
 }
+
+.alert-msg{
+  margin: 40px 0 0;
+  display: inline-block;
+  font-weight: 800;
+
+  &span{
+    font-style: normal;
+  }
+  &::before{
+    border-top: 2px solid $font-primary-color;
+  }
+}
+
 
 // animation
 @keyframes animeteBackground {
