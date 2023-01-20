@@ -1,0 +1,20 @@
+$white: #ffffff;
+$black: #000000;
+$font-primary-color: #1fe9be;
+
+$primaryBack-linear-gradient: linear-gradient(45deg, #40e2bf, #fb4195);
+
+// breakpoint
+$breakpoint-sm-width: 576px;
+$breakpoint-md-width: 768px;
+$breakpoint-lg-width: 992px;
+$breakpoint-xl-width: 1200px;
+$breakpoint-xll-width: 1400px;
+
+// animation and transitions
+$transition-3s-ease: transition 3s ease;
+$transitionAll-3s-ease: all 0.3s ease-in-out;
+
+// button
+$btn-border: #49ffd8;
+$btn-border-hover: #49ffd8;
