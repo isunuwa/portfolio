@@ -1,0 +1,108 @@
+/* Styling for the landing page */
+html {
+  font-size: 14px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  background: #0F0E17;
+  color: #ffffff;
+  /*font-family: 'Khula', sans-serif;*/
+  /*font-family: 'Alegreya Sans SC', sans-serif;*/
+  /* Background image is centered vertically and horizontally. */
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
+  /* Background image is fixed in viewport so that it doesn't move when height*/
+  /*of the content is greater than the height of the image */
+  /*background-attachment: fixed;*/
+  /*background-size: cover;*/
+  /*background-color: #DBE3F0;*/
+}
+
+/* html, body, main {
+  height: 100%;
+} */
+main {
+  padding: 5vh 5vw;
+  font-size: 1.25rem;
+}
+
+.intro {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+main * {
+  line-height: 1.5;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1;
+  padding-bottom: 2rem;
+}
+
+.comment {
+  color: #476c97;
+  font-weight: 400;
+}
+
+.indent {
+  padding-left: 3ch;
+  border-left: 1px solid rgba(71, 108, 151, 0.25);
+}
+
+.string {
+  color: #2eccb0;
+}
+
+.declaration {
+  color: #9a59c5;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #2eccb0;
+}
+
+a:hover, a:focus {
+  color: #91fde9;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #91fde9;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+punctuation {
+  color: #9a59c5;
+}
+
+small{
+  font-size: 14px;
+}
